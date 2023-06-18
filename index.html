@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaQueries.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Aphiwe Makisi - Portfolio Website</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav class="desktop-nav">
+          <div class="logo">
+            <p>aphiwe makisi</p>
+          </div>
+          <ul>
+            <li><a href="">home</a></li>
+            <li><a href="">about</a></li>
+            <li><a href="">projects</a></li>
+            <li><a href="">contact</a></li>
+
+            <div class="theme-toggle">
+              <i class="fa-solid fa-sun"></i>
+              <div class="toggle-switch">
+                <span id="theme-switch"></span>
+              </div>
+              <i class="fa-solid fa-moon"></i>
+            </div>
+          </ul>
+        </nav>
+
+        <nav class="mobile-nav">
+          <div class="logo">
+            <p>aphiwe makisi</p>
+          </div>
+          <div class="hamburger-menu">
+            <i id="open" class="fa-solid fa-bars"></i>
+            <i id="close" class="fa-solid fa-x menu-icon"></i>
+          </div>
+          <ul class="mobile-nav-links-wrapper">
+            <a href=""><li class="mobile-nav-link mnl-active">home</li></a>
+            <a href=""><li class="mobile-nav-link">about</li></a>
+            <a href=""><li class="mobile-nav-link">projects</li></a>
+            <a href=""><li class="mobile-nav-link">contact</li></a>
+          </ul>
+        </nav>
+      </header>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

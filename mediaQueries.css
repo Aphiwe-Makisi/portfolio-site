@@ -1,0 +1,31 @@
+@media (max-width: 900px) {
+  .desktop-nav {
+    display: none;
+  }
+
+  .mobile-nav {
+    display: flex;
+  }
+
+  header nav ul {
+    gap: 0px;
+    width: 60%;
+  }
+
+  header nav ul li a {
+    width: 100%;
+    display: block;
+    text-align: center;
+  }
+}
+
+@media (max-width: 400px) {
+  header nav .logo p {
+    font-size: 25px;
+  } 
+}
+@media (max-width: 500px) {
+  .mobile-nav-links-wrapper {
+    width: 100%;
+  }
+}
