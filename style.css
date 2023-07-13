@@ -9,13 +9,20 @@
   font-family: 'Roboto', sans-serif;
 }
 
-body {
+/* body {
   padding: 0 30px;
-}
+} */
 
 button, i {
   cursor: pointer;
 }
+
+ul {
+  background-color: #fff;
+  padding-left: 0 !important;
+  height: 800px;
+}
+
 
 header {
   position: relative;
@@ -31,14 +38,6 @@ header {
   right: 0;
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.979);
-}
-
-li {
-  list-style: none;
-}
-
-a {
-  text-decoration: none;
 }
 
 header nav,
@@ -161,4 +160,15 @@ header nav .logo p {
 
 .buttons {
   justify-content: center;
+}
+
+.socials-container i {
+  font-size: 30px;
+}
+
+.socials-container {
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin-top: 15px;
 }
