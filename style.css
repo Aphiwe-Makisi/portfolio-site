@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
 
 * {
   margin: 0;
@@ -6,11 +6,15 @@
   box-sizing: border-box;
   object-fit: contain;
   color: #000;
-  font-family: "Space Mono", monospace;
+  font-family: 'Roboto', sans-serif;
 }
 
 body {
   padding: 0 30px;
+}
+
+button, i {
+  cursor: pointer;
 }
 
 header {
@@ -25,6 +29,8 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
+  background-color: rgb(255, 255, 255, .5);
 }
 
 li {
@@ -59,6 +65,7 @@ header nav ul li {
 
 header nav .logo p {
   background-image: linear-gradient(to right, black, rgb(112, 0, 52));
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   font-size: 30px;
@@ -81,10 +88,6 @@ header nav .logo p {
 
   border-left: .5px solid #888888;
   border-bottom: .5px solid #888888;
-}
-
-.mnl-active {
-  /* style for active link */
 }
 
 .mobile-nav-link {
@@ -119,38 +122,43 @@ header nav .logo p {
   transition: display .3s ease-in-out;
 }
 
-/* Theme toggle switch */
-.theme-toggle {
+/* HOME SECTION STYLES */
+#home {
+  padding: 125px 0 50px 0;
+  height: 800px;
+  text-align: center;
+}
+
+#home, .home-image-section, .home-details-section {
   display: flex;
+  gap: 15px;
+}
+
+.home-image-section, .home-details-section {
+  width: 50%;
   align-items: center;
-  gap: 8px;
-}
-
-.theme-toggle i {
-  font-size: 15px;
-}
-
-.toggle-switch {
-  position: relative;
-  background-color: #353535;
-  height: 19px;
-  width: 40px;
-  border-radius: 15px;
-  padding: 5px;
-  border: 1px solid #888888;
-}
-
-#theme-switch {
-  position: absolute;
-  top: 1px;
-  left: 1.5px;
-  height: 15px;
-  width: 15px;
-  background-image: radial-gradient(#ff0000, #fff);
-  border-radius: 50%;
-  display: flex;
   justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  border: 1px solid #888888;
+}
+
+.image {
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.name {
+  font-size: 60px;
+  font-weight: 700px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.buttons {
+  justify-content: center;
 }
