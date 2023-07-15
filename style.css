@@ -17,13 +17,6 @@ button, i {
   cursor: pointer;
 }
 
-ul {
-  background-color: #fff;
-  padding-left: 0 !important;
-  height: 800px;
-}
-
-
 header {
   position: relative;
   display: flex;
@@ -76,6 +69,11 @@ header nav .logo p {
   display: none;
 }
 
+.mobile-nav a, header nav ul li a {
+  text-decoration: none;
+  color: #000;
+}
+
 .mobile-nav-links-wrapper {
   position: absolute;
   top: 103%;
@@ -87,6 +85,10 @@ header nav .logo p {
 
   border-left: .5px solid #888888;
   border-bottom: .5px solid #888888;
+
+  background-color: #fff;
+  padding-left: 0 !important;
+  height: 800px;
 }
 
 .mobile-nav-link {
@@ -169,6 +171,19 @@ header nav .logo p {
 .socials-container {
   justify-content: center;
   align-items: center;
-  gap: 5px;
+  gap: 15px;
   margin-top: 15px;
+}
+
+
+/* ABOUT SECTION */
+#about {
+  height: calc(100vh - 121px);
+}
+
+.img-fluid {
+  border-radius: 10px;
+  box-shadow: 0px 2px 5px 0px rgba(191, 191, 191, 0.75);
+  -webkit-box-shadow: 0px 2px 5px 0px rgba(191, 191, 191, 0.75);
+  -moz-box-shadow: 0px 2px 5px 0px rgba(191, 191, 191, 0.75);
 }
